@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <title>Jeremy</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
+    <style type="text/css">
+    .title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+    .slide {
+        height: 100vh;
+        width: 100%;
+        color: black;
+        border-bottom:10px solid white;
+    }
+    .caption {
+        float: left;
+        width: 20%;
+        height: 100%;
+        color: #888;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 200;
+        letter-spacing: .5px;
+    }
+    .caption p {
+        position: relative;
+        top: 35%;
+    }
+    .image {
+        float:left;
+        width: 80%;
+        height: 100%;
+        background-color: grey;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">J-beez gallery</h1>
+    <div class="slides">
+        <div id="slide-1" class="slide">
+            <div class="caption">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="image"></div>
+        </div>
+        <div id="slide-2" class="slide">
+            <div class="caption">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="image"></div>
+        </div>
+        <div id="slide-3" class="slide">
+            <div class="caption">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="image"></div>
+        </div>
+        <div id="slide-4" class="slide">
+            <div class="caption">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="image"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+    <script src="http:////ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/jquery.lettering-0.6.1.min.js"></script>
+    <script src="js/jquery.superscrollorama.js"></script>
+    <script>
+        $(document).ready(function() {
+            var controller = $.superscrollorama();
+            $.each($('.slide'), function(index, val) {
+                controller.pin($(val), 500);
+            });
+
+        });
+    </script>
+
+</body></html>
